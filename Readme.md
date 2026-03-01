@@ -9,6 +9,11 @@ readme online ile arama yapılabilir.
 
 [Github](https://github.com/crnaltunbas/miuul_html)
 
+---
+
+### CDN
+
+- Font Awesome = <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 Html5
 
 - Html5
@@ -17,9 +22,10 @@ Html5
 
 ## Html5 Features
 
-- Import a HTML file and watch it magically convert to Markdown
-- Drag and drop images (requires your Dropbox account be linked)
-
+- Html <!-- Html Comment -->
+- Css /* Css Comment */
+- JS  // Single Comment
+- JS /*  Multiple Comment */
 
 > The overriding design goal for Markdown's
 > formatting syntax is to make it as readable
