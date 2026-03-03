@@ -35,6 +35,105 @@
 <br>
 <noscript> your browser does not support JavaScript</noscript>
 <!-- Start code  -->
+<!-- Intermedia Form and Table  -->
+<h1> Intermedia Form and Table </h1>
+<form>
+    <!-- Name -->
+    <table>
+        <tr>
+            <td> <label for="uname">Adınız:</label></td>
+            <td>
+            <input 
+            type="text" 
+            id="uname" 
+            name="uname" 
+            required 
+            placeholder="Adınıza giriniz"
+            title="Adiniz giriniz"
+            autofocus  
+            >
+            </td>  
+        </tr>
+        <!-- surname -->
+        <tr>
+            <td> <label for="usurname">Soyadınız:</label></td>
+            <td> 
+            <input 
+            type="text" 
+            id="usurname" 
+            surname="usurname" 
+            required 
+            placeholder="soyadınızı giriniz"
+            title="Soyadiniz giriniz"
+            >
+        </td>
+        </tr>
+        <!-- email-->
+        <tr>
+            <td><label for="uemail">Email:</label></td>
+            <td><input 
+            type="email" 
+            id="uemail" 
+            name="uemail" 
+            required 
+            placeholder="Emailinizi giriniz"
+            title="Emailinizi giriniz"
+            >
+        </td>
+        </tr>
+        <!-- password -->
+        <tr>
+            <td> <label for="upassword">Password:</label></td>
+            <td><input 
+            type="password" 
+            id="upassword" 
+            name="upassword" 
+            required 
+            placeholder="Şifrenizi giriniz"
+            title="Şifrenizi giriniz"
+            minlength="3"
+            maxlength="10"
+            pattern="[a-zA-Z0-9]{3,10}"
+            ></td>
+        </tr>
+        <!-- Gender -->
+        <tr>
+            <td> <label>Gender:</label></td>
+            <td><input 
+            type="radio" 
+            id="female" 
+            name="gender" 
+            checked
+            >Bayan
+            <input 
+            type="radio" 
+            id="male" 
+            name="gender" 
+            >Bay
+        </td>
+        </tr>
+
+        <!-- Date -->
+        <tr>
+            <td> <label for="udate">Gender:</label></td>
+            <td>
+                <input 
+                type="datetime-local" 
+                id="udate" 
+                name="udate" 
+            >
+            </td>
+        </tr>
+        <!-- Button -->
+        <tr>
+            <td>:</label></td>
+            <td> <input type="reset">
+                <button type="submit">Gönder</button>
+            </td>
+        </tr>
+    </table>
+</form>
+<hr>
 <!-- Basic Form and Table -->
 <h1> Basic Form and Table </h1>
 <form>
@@ -63,318 +162,318 @@
         <tr>
             <td>:</label></td>
             <td> <input type="reset">
-                 <button type="submit">Gönder</button>
+                <button type="submit">Gönder</button>
             </td>
         </tr>
     </table>
 </form>
-    <!-- Basic Form -->
-    <h1> Basic Form</h1>
-    <form>
-        <!-- Name -->
-        <div>
-            <label for="uname">Adınız:</label>
-            <input type="text" id="uname">
+<!-- Basic Form -->
+<h1> Basic Form</h1>
+<form>
+    <!-- Name -->
+    <div>
+        <label for="uname">Adınız:</label>
+        <input type="text" id="uname">
+    </div>
+    <!-- surname -->
+    <div>
+        <label for="usurname">Soyadınız:</label>
+        <input type="text" id="usurname">
+    </div>
+    <!-- email-->
+    <div>
+        <label for="uemail">Email:</label>
+        <input type="text" id="uemail">
+    </div>
+    <!-- password -->
+    <div>
+        <label for="upassword">Password:</label>
+        <input type="text" id="upassword">
+    </div>
+    <!-- button -->
+    <div>
+        <input type="reset">
+        <button type="submit">Gönder</button>
+    </div>
+</form>
+<hr>
+<!-- Table  -->
+<table border="1" width='100%'>
+    <colgroup>
+        <col span="1" style="background-color:lightgreen;">
+        Database Table
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>ADI</th>
+            <th>SOYADI</th>
+            <th>TARİH</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Adı-1</td>
+            <td>Soyadı-1</td>
+            <td>Date-1</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4">&copy; Bütün haklar saklıdır.</th>
+        </tr>
+    </tfoot>
+</table>
+<BR><BR></BR></BR>
+<table border="1" width='100%'>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>ADI</th>
+            <th>SOYADI</th>
+            <th>TARİH</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Adı-1</td>
+            <td>Soyadı-1</td>
+            <td>Date-1</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="4">&copy; Bütün haklar saklıdır.</th>
+        </tr>
+    </tfoot>
+
+</table>
+<hr>
+<!-- Audio -->
+<audio width="100%" height="250" controls>
+    <source src="../" type="video/mp4">
+    <source src="../" type="video/ogg">
+</audio>
+
+
+<!-- Video -->
+<video width="100%" height="250" controls>
+    <source src="../" type="video/mp4">
+    <source src="../" type="video/ogg">
+</video>
+<hr>
+<!-- List  -->
+<!-- Definition List(Tanımlı Liste) -->
+<dl>
+    <dt>Frontend</dt>
+    <dd>Html5</dd>
+    <dd>Css3</dd>
+    <br>
+    <dt>Backend</dt>
+    <dd>Java</dd>
+    <dd>Node js</dd>
+</dl>
+<!--Unordered List(Düzensiz Liste ve Çıktıları)  -->
+<!-- ul>li{item - $}*4-->
+<ul>
+    <li>item - 1</li>
+    <li>item - 2</li>
+    <li>item - 3</li>
+    <li>item - 4</li>
+</ul>
+<!-- Ordered List(Düzenli Liste ) -->
+<!-- ol>li{item - $}*4 -->
+<ol type="1">
+    <li>item - 1</li>
+    <li>item - 2</li>
+    <li>item - 3</li>
+    <li>item - 4</li>
+</ol>
+
+<ol type="A">
+    <li>item - 1</li>
+    <li>item - 2</li>
+    <li>item - 3</li>
+    <li>item - 4</li>
+</ol>
+<ol type="a">
+    <li>item - 1</li>
+    <li>item - 2</li>
+    <li>item - 3</li>
+    <li>item - 4</li>
+</ol>
+<ol type="i">
+    <li>item - 1</li>
+    <li>item - 2</li>
+    <li>item - 3</li>
+    <li>item - 4</li>
+</ol>
+<ol start="5" type="I">
+    <li>item - 1</li>
+    <li>item - 2</li>
+    <li>item - 3</li>
+    <li>item - 4</li>
+</ol>
+
+<!-- favicon  -->
+<!-- Iframe -->
+<iframe src="https://miuul.com/" width="100%" height="200" frameborder="1" scrolling="no" marginheight="0"
+    marginwidth="0">
+    <!-- Map -->
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe
+                src="https://maps.google.com/maps?q=%C4%B0zmir%20&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                frameborder="0" scrolling="no" style="width: 490px; height: 400px;"></iframe>
+            <style>
+                .mapouter {
+                    display: table;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    position: relative;
+                    height: 400px;
+                    width: 490px;
+                    background: #fff;
+                }
+            </style><a href="https://wwmgame.com">wwm game</a>
+            <style>
+                .gmap_canvas iframe {
+                    position: relative !important;
+                    z-index: 2 !important;
+                }
+
+                .gmap_canvas a {
+                    color: #fff !important;
+                    position: absolute !important;
+                    top: 0 !important;
+                    left: 0 !important;
+                    z-index: 0 !important;
+                }
+            </style>
         </div>
-        <!-- surname -->
-        <div>
-            <label for="usurname">Soyadınız:</label>
-            <input type="text" id="usurname">
-        </div>
-        <!-- email-->
-        <div>
-            <label for="uemail">Email:</label>
-            <input type="text" id="uemail">
-        </div>
-        <!-- password -->
-        <div>
-            <label for="upassword">Password:</label>
-            <input type="text" id="upassword">
-        </div>
-        <!-- button -->
-        <div>
-            <input type="reset">
-            <button type="submit">Gönder</button>
-        </div>
-    </form>
+    </div>
     <hr>
-    <!-- Table  -->
-    <table border="1" width='100%'>
-        <colgroup>
-            <col span="1" style="background-color:lightgreen;">
-            Database Table
-        </colgroup>
+    <!-- Link -->
+    <a href="https://miuul.com/" target="_blank">Miuul</a>
+    <!-- email Link  -->
+    <a href="mailto:xyz@com">Send Mail</a><br>
+    <!-- Telephone Link -->
+    <a href="tel:+90111222334455">Call Me !</a><br>
+    <!-- Whatsapp Link -->
+    <a href="https://wa.me/+90111222334455?Size nasıl yardımcı olabilirim?">Business Whatsapp hattı</a><br>
+    <!-- Google Font  -->
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tenetur error aspernatur perferendis
+        debitis ducimus cum reiciendis quas quis eum, ad sed voluptate iure ut odio eligendi. Atque, tenetur dolore?
+        Fugiat temporibus soluta nulla cum, sequi, animi ea molestiae iure praesentium amet sed, explicabo sapiente
+        dolorum nobis quam exercitationem excepturi blanditiis laborum voluptatem atque illo. Enim possimus magni
+        nihil sit.
+    </p>
+    <!-- Emoji -->
+    <p>&#128042</p>
+    <p> &#128040</p>
 
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>ADI</th>
-                <th>SOYADI</th>
-                <th>TARİH</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Adı-1</td>
-                <td>Soyadı-1</td>
-                <td>Date-1</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="4">&copy; Bütün haklar saklıdır.</th>
-            </tr>
-        </tfoot>
-    </table>
-    <BR><BR></BR></BR>
-    <table border="1" width='100%'>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>ADI</th>
-                <th>SOYADI</th>
-                <th>TARİH</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Adı-1</td>
-                <td>Soyadı-1</td>
-                <td>Date-1</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th colspan="4">&copy; Bütün haklar saklıdır.</th>
-            </tr>
-        </tfoot>
+    <!-- Datalist -->
+    <input list="miuul_list" name="miuul_backend">
+    <datalist id=" miuul_list" />
+    <option value="Java SE" />
+    <option value="Java EE" />
+    <option value="Web Service" />
+    <option value="Spring Boot" />
+    </datalist>
 
-    </table>
     <hr>
-    <!-- Audio -->
-    <audio width="100%" height="250" controls>
-        <source src="../" type="video/mp4">
-        <source src="../" type="video/ogg">
-    </audio>
+    <!-- Optional -->
+    <select name="miuul_frontend1" id="miuul_frontend1" multiple disabled>
+        <option value="0">Seçiniz</option>
+        <option value="1">Html5</option>
+        <option value="2">Css3</option>
+        <option value="3">JS</option>
+        <option value="4">React JS</option>
+    </select>
+    <!-- Optional -->
+    <select name="miuul_frontend2" id="miuul_frontend2" multiple>
+        <option value="0">Seçiniz</option>
+        <option value="1">Html5</option>
+        <option value="2">Css3</option>
+        <option value="3">JS</option>
+        <option value="4">React JS</option>
 
-
-    <!-- Video -->
-    <video width="100%" height="250" controls>
-        <source src="../" type="video/mp4">
-        <source src="../" type="video/ogg">
-    </video>
+    </select>
     <hr>
-    <!-- List  -->
-    <!-- Definition List(Tanımlı Liste) -->
-    <dl>
-        <dt>Frontend</dt>
-        <dd>Html5</dd>
-        <dd>Css3</dd>
-        <br>
-        <dt>Backend</dt>
-        <dd>Java</dd>
-        <dd>Node js</dd>
-    </dl>
-    <!--Unordered List(Düzensiz Liste ve Çıktıları)  -->
-    <!-- ul>li{item - $}*4-->
-    <ul>
-        <li>item - 1</li>
-        <li>item - 2</li>
-        <li>item - 3</li>
-        <li>item - 4</li>
-    </ul>
-    <!-- Ordered List(Düzenli Liste ) -->
-    <!-- ol>li{item - $}*4 -->
-    <ol type="1">
-        <li>item - 1</li>
-        <li>item - 2</li>
-        <li>item - 3</li>
-        <li>item - 4</li>
-    </ol>
+    <!-- image -->
+    <img src="img/1.png" alt="it isn't picture all here"> <br>
+    <img src="img/2.png" alt="it isn't picture all here" width="100%" height="50%"> <br>
+    <img src="img/3.png" alt="it isn't picture all here" width="100%" height="50%" title="Çalışma"> <br>
 
-    <ol type="A">
-        <li>item - 1</li>
-        <li>item - 2</li>
-        <li>item - 3</li>
-        <li>item - 4</li>
-    </ol>
-    <ol type="a">
-        <li>item - 1</li>
-        <li>item - 2</li>
-        <li>item - 3</li>
-        <li>item - 4</li>
-    </ol>
-    <ol type="i">
-        <li>item - 1</li>
-        <li>item - 2</li>
-        <li>item - 3</li>
-        <li>item - 4</li>
-    </ol>
-    <ol start="5" type="I">
-        <li>item - 1</li>
-        <li>item - 2</li>
-        <li>item - 3</li>
-        <li>item - 4</li>
-    </ol>
-
-    <!-- favicon  -->
-    <!-- Iframe -->
-    <iframe src="https://miuul.com/" width="100%" height="200" frameborder="1" scrolling="no" marginheight="0"
-        marginwidth="0">
-        <!-- Map -->
-        <div class="mapouter">
-            <div class="gmap_canvas"><iframe
-                    src="https://maps.google.com/maps?q=%C4%B0zmir%20&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                    frameborder="0" scrolling="no" style="width: 490px; height: 400px;"></iframe>
-                <style>
-                    .mapouter {
-                        display: table;
-                    }
-
-                    .gmap_canvas {
-                        overflow: hidden;
-                        position: relative;
-                        height: 400px;
-                        width: 490px;
-                        background: #fff;
-                    }
-                </style><a href="https://wwmgame.com">wwm game</a>
-                <style>
-                    .gmap_canvas iframe {
-                        position: relative !important;
-                        z-index: 2 !important;
-                    }
-
-                    .gmap_canvas a {
-                        color: #fff !important;
-                        position: absolute !important;
-                        top: 0 !important;
-                        left: 0 !important;
-                        z-index: 0 !important;
-                    }
-                </style>
-            </div>
-        </div>
-        <hr>
-        <!-- Link -->
-        <a href="https://miuul.com/" target="_blank">Miuul</a>
-        <!-- email Link  -->
-        <a href="mailto:xyz@com">Send Mail</a><br>
-        <!-- Telephone Link -->
-        <a href="tel:+90111222334455">Call Me !</a><br>
-        <!-- Whatsapp Link -->
-        <a href="https://wa.me/+90111222334455?Size nasıl yardımcı olabilirim?">Business Whatsapp hattı</a><br>
-        <!-- Google Font  -->
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tenetur error aspernatur perferendis
-            debitis ducimus cum reiciendis quas quis eum, ad sed voluptate iure ut odio eligendi. Atque, tenetur dolore?
-            Fugiat temporibus soluta nulla cum, sequi, animi ea molestiae iure praesentium amet sed, explicabo sapiente
-            dolorum nobis quam exercitationem excepturi blanditiis laborum voluptatem atque illo. Enim possimus magni
-            nihil sit.
-        </p>
-        <!-- Emoji -->
-        <p>&#128042</p>
-        <p> &#128040</p>
-
-        <!-- Datalist -->
-        <input list="miuul_list" name="miuul_backend">
-        <datalist id=" miuul_list" />
-        <option value="Java SE" />
-        <option value="Java EE" />
-        <option value="Web Service" />
-        <option value="Spring Boot" />
-        </datalist>
-
-        <hr>
-        <!-- Optional -->
-        <select name="miuul_frontend1" id="miuul_frontend1" multiple disabled>
-            <option value="0">Seçiniz</option>
-            <option value="1">Html5</option>
-            <option value="2">Css3</option>
-            <option value="3">JS</option>
-            <option value="4">React JS</option>
-        </select>
-        <!-- Optional -->
-        <select name="miuul_frontend2" id="miuul_frontend2" multiple>
-            <option value="0">Seçiniz</option>
-            <option value="1">Html5</option>
-            <option value="2">Css3</option>
-            <option value="3">JS</option>
-            <option value="4">React JS</option>
-
-        </select>
-        <hr>
-        <!-- image -->
-        <img src="img/1.png" alt="it isn't picture all here"> <br>
-        <img src="img/2.png" alt="it isn't picture all here" width="100%" height="50%"> <br>
+    <!-- link  -->
+    <a href="https://miuul.com/">Miuul-1</a> <br>
+    <a href="https://miuul.com/" target="_blank">Miuul-2</a>
+    <!-- link + image -->
+    <a href="https://miuul.com/" target="_blank">
         <img src="img/3.png" alt="it isn't picture all here" width="100%" height="50%" title="Çalışma"> <br>
-
-        <!-- link  -->
-        <a href="https://miuul.com/">Miuul-1</a> <br>
-        <a href="https://miuul.com/" target="_blank">Miuul-2</a>
-        <!-- link + image -->
-        <a href="https://miuul.com/" target="_blank">
-            <img src="img/3.png" alt="it isn't picture all here" width="100%" height="50%" title="Çalışma"> <br>
-        </a>
-        <hr>
-        <!-- formatter  -->
-        <b>bold</b><br>
-        <i>italic</i><br>
-        <big> big</big> <br>
-        <strong>strong</strong><br>
-        <em>vurgulama</em><br>
-        10<sup>5</sup><br>
-        log<sub>2</sub>n <br>
-        <mark> Merhabalar mark</mark> <br>
-        <code>print codes </code> <br>
-        <del>100</del>TL 99TL <br>
-        <u>important</u> <br>
-        <ins> important </ins> <br>
-        <hr>
-        <b>
-            <i>
-                <strong>
-                    <code>
+    </a>
+    <hr>
+    <!-- formatter  -->
+    <b>bold</b><br>
+    <i>italic</i><br>
+    <big> big</big> <br>
+    <strong>strong</strong><br>
+    <em>vurgulama</em><br>
+    10<sup>5</sup><br>
+    log<sub>2</sub>n <br>
+    <mark> Merhabalar mark</mark> <br>
+    <code>print codes </code> <br>
+    <del>100</del>TL 99TL <br>
+    <u>important</u> <br>
+    <ins> important </ins> <br>
+    <hr>
+    <b>
+        <i>
+            <strong>
+                <code>
                 <ins>
                     <mark>
                         Formatter all in
                     </mark>
                 </ins>
             </code>
-                </strong>
-            </i>
-        </b>
+            </strong>
+        </i>
+    </b>
 
-        <!-- h${Heading-$}*6 -->
-        <h1>Heading-1</h1>
-        <h2>Heading-2</h2>
-        <h3>Heading-3</h3>
-        <h4>Heading-4</h4>
-        <h5>Heading-5</h5>
-        <h6>Heading-6</h6>
+    <!-- h${Heading-$}*6 -->
+    <h1>Heading-1</h1>
+    <h2>Heading-2</h2>
+    <h3>Heading-3</h3>
+    <h4>Heading-4</h4>
+    <h5>Heading-5</h5>
+    <h6>Heading-6</h6>
 
-        <!-- Paragraf -->
-        <hr>
-        <p> Merhabalar Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum placeat dicta dignissimos rerum
-            iste
-            in, delectus commodi nam iure vitae excepturi hic! Vitae perspiciatis animi illo! Est consequatur maiores
-            aliquam!</p>
+    <!-- Paragraf -->
+    <hr>
+    <p> Merhabalar Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum placeat dicta dignissimos rerum
+        iste
+        in, delectus commodi nam iure vitae excepturi hic! Vitae perspiciatis animi illo! Est consequatur maiores
+        aliquam!</p>
 
-        <hr>
-        <br>
-        <br>
-        <br>
-        <!-- font -->
-        <i class="fa-solid fa-address-book"></i>
-        <!-- Start semantic  -->
-        <header></header>
-        <main></main>
-        <footer></footer>
-        <!-- End semantic -->
+    <hr>
+    <br>
+    <br>
+    <br>
+    <!-- font -->
+    <i class="fa-solid fa-address-book"></i>
+    <!-- Start semantic  -->
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <!-- End semantic -->
 
-        <!-- End code  -->
-        </body>
+    <!-- End code  -->
+    </body>
 
 </html>
